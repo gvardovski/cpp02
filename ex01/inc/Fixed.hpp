@@ -6,7 +6,7 @@
 /*   By: svolkau <gvardovski@icloud.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/12 14:09:07 by svolkau           #+#    #+#             */
-/*   Updated: 2026/01/13 10:48:45 by svolkau          ###   ########.fr       */
+/*   Updated: 2026/01/13 11:14:09 by svolkau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 #define FIXED_CLASS_HPP
 
 #include <iostream>
+#include <cmath>
 
 class Fixed {
 
@@ -23,6 +24,8 @@ class Fixed {
 	
 	public:
 		Fixed(void);
+		Fixed(const int value);
+		Fixed(const float value);
 		Fixed(Fixed const & src);
 		~Fixed(void);
 
@@ -30,7 +33,11 @@ class Fixed {
 
 		int getRawBits( void ) const;
 		void setRawBits( int const raw );
+		float toFloat( void ) const;
+		int toInt( void ) const;
 
 };
+
+std::ostream & operator<<(std::ostream & o, Fixed const & rhs);
 
 #endif
