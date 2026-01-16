@@ -8,8 +8,8 @@ Implements a Fixed class with fixed-point number representation
 Features: Default constructor, copy constructor, destructor, assignment operator
 Uses 8 fractional bits for precision 🔢
 Demonstrates Orthodox Canonical Form
-ex01 📂 - Extended exercises (to be explored)
 
+ex01 📂 - Extended exercises (to be explored)
 ex02 📂 - Advanced exercises (to be explored)
 
 🛠️ Technologies:
